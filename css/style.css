@@ -8,13 +8,18 @@
 .main-header {
   width: 100%;
   min-height: 1024px;
-  padding: 50px;
+  padding: 40px 350px 0px 350px;
   box-sizing: border-box;
   /* background-color: #555556 */
   background-image: url(../img/mountain.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.logo-txt {
+  color: #fff;
+  font-size: 34px;
 }
 
 .logos {
@@ -29,6 +34,26 @@
   z-index: 446;
 }
 
+.nav-main {
+  border: 1px solid green;
+}
+
 .nav-ul-main {
+  display: inline-block;
   list-style: none;
+  /* color: #fff; */
+  /* font-size: 14px; */
+}
+
+.nav-ul-main-item {
+  font-size: 14px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #c7b299;
 }
