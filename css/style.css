@@ -1,4 +1,10 @@
 
+@font-face {
+  font-family: raleway-regular;
+  src: url(../fonts/raleway-regular.ttf);
+  font-size: normal;
+}
+
 .container {
   width: 1920px;
   border: 1px solid red;
@@ -10,19 +16,34 @@
   min-height: 1024px;
   padding: 40px 350px 0px 350px;
   box-sizing: border-box;
-  /* background-color: #555556 */
-  background-image: url(../img/mountain.png);
+  /* background-image: url(../img/mountain.png); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #555556
 }
 
-.logo-txt {
-  color: #fff;
-  font-size: 34px;
+.logo {
+  display: block;
+  /* font-size: 34px; */
+  fill: #fff;
+  font-family: raleway-regular;
+  text-decoration: none;
+  /* border: 1px solid; */
+  height: 64px;
+  width: 185px;
 }
 
-.logos {
+.logo:hover {
+  fill: #c7b299;
+}
+
+.menu {
+  display: block;
+  border: 1px solid yellow;
+}
+
+/* .logos {
   background-image: -moz-linear-gradient( 45deg, rgb(199,178,153) 0%, rgb(90,85,83) 100%);
   background-image: -webkit-linear-gradient( 45deg, rgb(199,178,153) 0%, rgb(90,85,83) 100%);
   background-image: -ms-linear-gradient( 45deg, rgb(199,178,153) 0%, rgb(90,85,83) 100%);
@@ -32,20 +53,22 @@
   width: 64px;
   height: 56px;
   z-index: 446;
-}
+} */
 
-.nav-main {
+.nav-menu {
   border: 1px solid green;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.nav-ul-main {
+.nav-ul-menu {
   display: inline-block;
   list-style: none;
   /* color: #fff; */
   /* font-size: 14px; */
 }
 
-.nav-ul-main-item {
+.nav-ul-menu-item {
   font-size: 14px;
 }
 
