@@ -91,19 +91,71 @@
   color: #998675;
 }
 
-.menu-btn,
-.menu-btn-search {
+.btn-cart,
+.btn-search {
+  fill: #fff;
   float: left;
   width: 24px;
   height: 24px;
-  fill: #fff;
 }
 
-.menu-btn-search {
-  size: 0;
+.btn-cart:hover {
+  fill: #998675;
 }
 
-.menu-btn:hover,
-.menu-btn-search:hover {
-  fill: #c7b299;
+li:last-child {
+  padding: 20px 15px;
+  /* border: 1px solid red; */
+}
+
+.btn-search {
+	/* -webkit-appearance: textfield;
+	-webkit-box-sizing: content-box; */
+	font-family: inherit;
+	font-size: 100%;
+  width: 24px;
+  padding-left: 10px;
+  color: transparent;
+  cursor: pointer;
+  transition: all .5s;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: url(../img/icon-search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Удаляем иконку поиска и сброса */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+/* Заполнитель */
+input:-moz-placeholder {
+	color: transparent;
+}
+input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.btn-search:hover {
+  color: #c7b299;
+}
+
+.btn-search:focus {
+	width: 100px;
+	padding-left: 12px;
+	color: #fff;
+	background-color: grey;
+	cursor: auto;
+  border: 1px solid green;
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
