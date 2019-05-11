@@ -58,7 +58,7 @@
 .navigation {
   margin: 0;
   padding: 0 0 0 30%;
-  border: 2px solid green;
+  border: 1px solid green;
   height: 64px;
   min-width: 1050px;
 }
@@ -73,7 +73,7 @@
   font-family: montserrat-light;
   font-size: 14px;
   font-weight: 400;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3); */
   float: left;
   padding: 22px 15px 22px 15px;
 }
@@ -91,11 +91,19 @@
   color: #998675;
 }
 
-.btn {
-  clear: both;
-  border: 1px solid brown;
-  color: white;
-  width: 18px;
+.menu-btn,
+.menu-btn-search {
+  float: left;
+  width: 24px;
   height: 24px;
-  background-image: url(../img/icon-cart.png);
+  fill: #fff;
+}
+
+.menu-btn-search {
+  size: 0;
+}
+
+.menu-btn:hover,
+.menu-btn-search:hover {
+  fill: #c7b299;
 }
