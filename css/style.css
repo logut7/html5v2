@@ -11,27 +11,44 @@
   font-size: normal;
 }
 
+@font-face {
+  font-family: raleway-medium;
+  src: url(../fonts/raleway-medium.ttf);
+}
+
+@font-face {
+  font-family: raleway-extrabold;
+  src: url(../fonts/raleway-extrabold.ttf);
+}
+
 .container {
   width: 1920px;
   border: 1px solid red;
   margin: 0 auto;
+  /* padding: 0 19% 0 19%; */
+  /* background-color: grey; */
 }
 
 .main-header {
-  width: 100%;
-  min-height: 1024px;
-  padding: 40px 350px 0px 19%;
-  box-sizing: border-box;
-  /* background-image: url(../img/mountain.png); */
+  min-width: 1232px;
+  height: 1024px;
+  /* border: 1px solid purple; */
+  margin: 0 auto;
+  background-color: #555556;
+  background-image: url(../img/mountain.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  background-color: #555556
+  background-size: contain;
 }
 
 .header-top {
-  /* display: flex; */
-  border: 1px solid aqua;
+  display: flex;
+  /* border: 1px solid aqua; */
+  width: 1232px;
+  /* height: 64px; */
+  padding: 40px 30px 0;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .logo {
@@ -41,10 +58,9 @@
   font-weight: 400;
   text-decoration: none;
   font-size: 34px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 64px;
-  width: 185px;
-  float: left;
+  width: 187px;
 }
 
 .logo:hover {
@@ -56,27 +72,37 @@
 }
 
 .navigation {
-  margin: 0;
-  padding: 0 0 0 30%;
-  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 200px;
+  /* border: 1px solid green; */
   height: 64px;
-  min-width: 1050px;
+  width: 80%;
+  font-size: 14px;
 }
 
 .list-menu {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  width: 80%;
+  padding-left: 0;
 }
 
 .list-menu-item {
   font-family: montserrat-light;
-  font-size: 14px;
   font-weight: 400;
-  /* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3); */
-  float: left;
-  padding: 22px 15px 22px 15px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  /* border: 1px solid yellow; */
+  /* margin: 0 15px; */
 }
+
+/* body > div > header > div.header-top > nav > ul > li:nth-child(8) {
+  padding-right: 0;
+} */
 
 .nav-link {
   text-decoration: none;
@@ -91,24 +117,21 @@
   color: #998675;
 }
 
-.btn-cart,
-.btn-search {
+.btn-cart {
   fill: #fff;
-  float: left;
   width: 24px;
   height: 24px;
+  /* border: 1px solid red; */
+  /* padding: 10px; */
+  background-position: center;
 }
 
 .btn-cart:hover {
   fill: #998675;
 }
 
-li:last-child {
-  padding: 20px 15px;
-  /* border: 1px solid red; */
-}
-
 .btn-search {
+  display: block;
 	/* -webkit-appearance: textfield;
 	-webkit-box-sizing: content-box; */
 	font-family: inherit;
@@ -122,12 +145,16 @@ li:last-child {
   width: 24px;
   height: 24px;
   background-color: transparent;
-  background-image: url(../img/icon-search.png);
+  background-image: url(../img/icon-search.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: 0;
-  padding: 5px;
+  padding: 17px;
   cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  /* border: 1px solid red; */
 }
 
 /* Удаляем иконку поиска и сброса */
@@ -146,16 +173,134 @@ input::-webkit-input-placeholder {
 
 .btn-search:hover {
   color: #c7b299;
+  fill: red;
 }
 
 .btn-search:focus {
-	width: 100px;
+	width: 150px;
 	padding-left: 12px;
-	color: #fff;
+	color: #c7b299;
 	background-color: grey;
 	cursor: auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
   -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
   box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 1232px;
+  border: 1px solid red;
+  margin: 0 auto;
+  padding: 270px 0 0 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-h2 {
+  font-family: Raleway-Medium;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.title-h1 {
+  font-family: raleway-extrabold;
+  font-size: 52px;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.text {
+  /* border: 1px solid green; */
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: montserrat-light;
+  width: 580px;
+  margin: 16px 0 50px 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.text:before {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 73px;
+  position: absolute;
+  top: -15px;
+  left: -550px;
+  background-size: contain;
+  background-image: url(../img/left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: red;
+  color: red;
+}
+
+.text:hover:before {
+  left: -552px;
+  cursor: pointer;
+}
+
+.text:after {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 73px;
+  position: absolute;
+  top: -15px;
+  right: -550px;
+  background-size: contain;
+  background-image: url(../img/right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text:hover:after {
+  right: -552px;
+  cursor: pointer;
+}
+
+.btn-get {
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  background-color: #998675;
+  min-width: 173px;
+  box-sizing: border-box;
+  min-height: 55px;
+  font-family: raleway-extrabold;
+  font-size: 14px;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 0 #736357;
+  border: 0;
+  display: block;
+  outline: none;
+}
+
+.btn-get:hover {
+  background: #634a37;
+  color: #fff;
+ /* background: #ededed; */
+  background: -webkit-gradient(linear, left top, left bottom, from(#998675), to(#5e412c));
+  background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+  background: -ms-linear-gradient(top,  #fff,  #dcdcdc);
+  background-image: -o-linear-gradient(top,  #fff,  #dcdcdc);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+
+.btn-get:active {
+  /* color: #fff; */
+  background-color: #eaeef1;
+  text-decoration: none;
+  border: 0;
+  position: relative;
+  top: 1px;
+  color: #999;
 }
