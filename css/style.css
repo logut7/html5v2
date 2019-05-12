@@ -2,13 +2,11 @@
 @font-face {
   font-family: raleway-regular;
   src: url(../fonts/raleway-regular.ttf);
-  font-size: normal;
 }
 
 @font-face {
   font-family: montserrat-light;
   src: url(../fonts/montserrat-light.ttf);
-  font-size: normal;
 }
 
 @font-face {
@@ -23,7 +21,7 @@
 
 .container {
   width: 1920px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 auto;
   /* padding: 0 19% 0 19%; */
   /* background-color: grey; */
@@ -99,10 +97,6 @@
   /* border: 1px solid yellow; */
   /* margin: 0 15px; */
 }
-
-/* body > div > header > div.header-top > nav > ul > li:nth-child(8) {
-  padding-right: 0;
-} */
 
 .nav-link {
   text-decoration: none;
@@ -192,9 +186,9 @@ input::-webkit-input-placeholder {
   display: flex;
   flex-direction: column;
   width: 1232px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 auto;
-  padding: 270px 0 0 0;
+  padding: 270px 0 40px 0;
   justify-content: center;
   align-items: center;
 }
@@ -239,8 +233,6 @@ input::-webkit-input-placeholder {
   background-image: url(../img/left.png);
   background-repeat: no-repeat;
   background-position: center;
-  fill: red;
-  color: red;
 }
 
 .text:hover:before {
@@ -303,4 +295,46 @@ input::-webkit-input-placeholder {
   position: relative;
   top: 1px;
   color: #999;
+}
+
+.bottom-link-wrap {
+  display: block;
+  /* border: 1px solid red; */
+  width: 150px;
+  height: 20px;
+  margin-top: 325px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.bottom-link {
+  display: inline-block;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  opacity: 0.4;
+  background-color: #9d9b9b;
+  background-image: url(../img/01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+}
+
+.bottom-link:hover {
+  border: 2px solid #d3c1ad;
+  /* display: block; */
+  opacity: 1;
+  background-color: transparent;
+  background-image: none;
+  margin: 3px;
+}
+
+.bottom-link:active {
+  border: 2px solid #998675;
+  /* display: block; */
+  opacity: 1;
+  background-color: transparent;
+  background-image: none;
+  margin: 3px;
 }
