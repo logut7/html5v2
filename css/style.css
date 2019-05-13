@@ -21,7 +21,7 @@
 
 .container {
   width: 1920px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: 0 auto;
   /* padding: 0 19% 0 19%; */
   /* background-color: grey; */
@@ -98,20 +98,25 @@
   /* margin: 0 15px; */
 }
 
-.nav-link {
+.nav-link,
+.nav-link-basket {
   text-decoration: none;
   color: #fff;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link-basket:hover {
   color: #c7b299;
+  fill: #c7b299;
 }
 
-.nav-link:active {
+.nav-link:active,
+.nav-link-basket:active {
   color: #998675;
+  fill: #998675;
 }
 
-.btn-cart {
+.nav-link-basket {
   fill: #fff;
   width: 24px;
   height: 24px;
@@ -338,4 +343,10 @@ input::-webkit-input-placeholder {
   background-image: none;
   margin: 3px;
 }
-/* Блок 2 */
+
+.section-white {
+  background-color: #fff;
+  min-width: 1232px;
+  height: 1075px;
+  border: 1px solid;
+}
