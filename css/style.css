@@ -19,6 +19,16 @@
   src: url(../fonts/raleway-extrabold.ttf);
 }
 
+@font-face {
+  font-family: raleway-semibold;
+  src: url(../fonts/raleway-semibold.ttf);
+}
+
+@font-face {
+  font-family: raleway-bold;
+  src: url(../fonts/raleway-bold.ttf);
+}
+
 .container {
   width: 1920px;
   border: 1px solid red;
@@ -350,3 +360,74 @@ input::-webkit-input-placeholder {
   height: 1075px;
   border: 1px solid;
 }
+
+.section-1-top {
+  background-color: #fff;
+  height: 375px;
+  padding: 80px 0 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.section-1-bottom {
+  background-color: #fbfaf8;
+  height: 700px;
+  border: 1px solid green;
+}
+
+.section-1-top-inside{
+  width: 1180px;
+  /* height: 200px; */
+  /* border: 1px solid green; */
+  display: flex;
+  margin: 0 auto;
+}
+
+.serv-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none;
+  color: #555;
+  text-align: center;
+  /* border: 1px solid red; */
+  width: 100%;
+  }
+
+.serv-link:hover .serv-icon {
+  fill: #c7b299;
+}
+
+.serv-link:hover .serv-txt {
+  color: #c7b299;
+}
+
+.serv-link:hover:after {
+  background-color: #c7b299;
+}
+
+.serv-link .serv-icon {
+  fill: #555;
+}
+
+.serv-link .serv-txt {
+  font-family: raleway-semibold;
+  font-size: 22px;
+  width: 100%;
+  margin: 25px 0 0 0;
+}
+
+.serv-link .serv-txt-p {
+  width: 100%;
+  margin: 20px 0 0 0;
+  font-family: montserrat-light;
+  font-size: 14px;
+}
+
+.serv-link:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #f1eee9;
